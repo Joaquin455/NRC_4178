@@ -88,15 +88,15 @@
 .formulario label {
   display: block;
   color: aquamarine;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-weight: 540;
+  margin-bottom: 0.4rem;
 }
 
 .formulario input[type="text"],
 .formulario select {
   width: 100%;
-  padding: 0.625rem;
-  border: 0.094rem solid red;
+  padding: 0.5rem;
+  border: 0.08rem solid blue;
   border-radius: 0.188rem;
 }
 
