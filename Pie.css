@@ -1,8 +1,9 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
+  background-color: #97018b; /* Fondo oscuro para contraste */
   color: white;
   padding: 2rem 1rem;
+  border-radius: 5px;
   font-family: "Roboto", sans-serif;
 }
 
