@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+
+  <body>
+    <!--MENU TOPHEADER-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="70" height="50" src="logos/logo.png" alt="" />
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+      <ul class="Menu-Horizontal">
+        <li><a href=""> Promociones</a></li>
+        <li>
+          <a href="">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Servicio Financieros</a></li>
+            <li><a href="">Soluciones</a></li>
+            <li><a href="">Mundo Diners</a></li>
+          </ul>
+        </li>
+        <li><a href="">Privilegios</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="#contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <section class="seccion-promo"></section>
+    <div class="div-gral-promo">
+      <div class="div-promo-texto">
+        <h1>Seccion de promociones, ¿que son las promociones?</h1>
+        <p>
+          Las promociones son estrategias de marketing que utilizan acciones y
+          comunicaciones para informar, persuadir y recordar a los clientes
+          potenciales sobre un producto o servicio, con el objetivo final de
+          estimular la compra. Estas estrategias pueden incluir descuentos de
+          precio, ofertas especiales como regalos o meses sin intereses, y otras
+          actividades como apoyo en publicidad o eventos, que buscan crear un
+          incentivo a corto o largo plazo para el consumidor.
+        </p>
+      </div>
+      <div class="div-promo-img"></div>
+    </div>
+
+    <!----Formulario--->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--DIV1-INPUT=TEXT-->
+          <div class="campo">
+            <label for="nombre"> Nombres completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresar nombres"
+            />
+          </div>
+          <!--DIV2-LISTA DESPLEGABLE-->
+          <div class="campo">
+            <label for="nombre"> País </label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brazil</option>
+            </select>
+          </div>
+          <!--DIV3-CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="a" />
+                  Noooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="b" />
+                  Copie</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="c" />
+                  Loooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="d" />
+                  mismo</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--DIV4-RADIO-->
+          <div class="campo">
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="m" /> Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="f" /> Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button input type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="logos/Mastercard-logo.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/PoliticaPrivacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="/Documentos/Terminos-y-Condiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://marketplace.canva.com/R9e60/MAGSPoR9e60/1/tl/canva-vector-icon-phone-call-MAGSPoR9e60.png"
+                alt="Whattsapp"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://pngimg.com/d/youtube_PNG102351.png"
+                alt="Youtube"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small/tiktok-icon-free-png.png"
+                alt="Tiktok"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
