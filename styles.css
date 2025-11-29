@@ -87,7 +87,7 @@
 
 .formulario label {
   display: block;
-  color: aquamarine;
+  color: black;
   font-weight: 540;
   margin-bottom: 0.4rem;
 }
@@ -115,4 +115,87 @@
   border-radius: 0.5rem;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  z-index: 10000;
+  position: relative;
+  right: 40px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .Menu-Horizontal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff, #e3f6ff);
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /* Animación */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.35s ease;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .Menu-Horizontal li {
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid #cceefd;
+  }
+
+  .Menu-Horizontal li a {
+    color: #004a80;
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  .Menu-Horizontal li:hover {
+    background-color: #d6f1ff;
+  }
+
+  /* Submenú */
+  .Menu-Vertical {
+    width: 100%;
+    background-color: #f7fdff;
+    padding-left: 1.5rem;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #51d1f6;
+    border-radius: 5px;
+  }
+
+  .Menu-Vertical li {
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+
+  .Menu-Vertical li a {
+    color: #003a66;
+    font-size: 1rem;
+  }
+
+  .Menu-Vertical li:hover {
+    background: #e8f8ff;
+  }
 }
